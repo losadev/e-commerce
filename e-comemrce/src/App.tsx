@@ -1,10 +1,20 @@
+import Categories from "./components/Categories"
+import Footer from "./components/Footer"
+import Form from "./components/Form"
+import HeroSection from "./components/HeroSection"
+import NavBar from "./components/NavBar"
+import Products from "./components/Products"
+
 function App() {
 
   return (
     <>
-    <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
+    <NavBar />
+    <HeroSection />
+    <Products />
+    <Categories />
+    <Form />
+    <Footer />
     </>
   )
 }
