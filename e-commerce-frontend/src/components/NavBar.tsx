@@ -24,7 +24,7 @@ const NavBar = () => {
         <h1 className="text-xl font-bold">ShopEasy</h1>
         <ul className="flex gap-4 items-center font-semibold text-[.9rem]">
           <li className="hover:underline"><a href="#home">Home</a></li>
-          <li className="hover:underline"><a href="#products">Product</a></li>
+          <li className="hover:underline"><a href="#products">Products</a></li>
           <li className="hover:underline"><a href="#categories">Categories</a></li>
           <li className="hover:cursor-pointer"><FiShoppingBag className="font-semibold text-[1.5rem]" /></li>
         </ul>

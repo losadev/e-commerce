@@ -13,8 +13,8 @@ export interface Props {
 const ProductCard = ({ title, price, description, category, image }: Props) => {
   return (
     <div className="inline-flex flex-col border-1 border-gray-200 rounded-2xl pb-4 h-full">
-      <section className="rounded-t-2xl h-[20rem]">
-        <img className="rounded-t-2xl w-full h-full object-contain py-4" src={image} alt="Imagen del producto" />
+      <section className="rounded-t-2xl h-[20rem] group overflow-hidden">
+        <img className="rounded-t-2xl w-full h-full object-contain py-4 group-hover:scale-120 group-hover:ease-in-out group-hover:duration-800 duration-800" src={image} alt="Imagen del producto" />
       </section>
       <section className="px-4 border-t-1 border-gray-200 flex flex-col flex-grow">
         <div className="mt-4 flex justify-between gap-4">
@@ -25,7 +25,7 @@ const ProductCard = ({ title, price, description, category, image }: Props) => {
           <span className="text-xl font-bold">${price}</span>
         </div>
         <p className="mt-6 flex-grow text-gray-500">{description}</p>
-        <button className="hover:cursor-pointer bg-black min-w-full mt-4 text-white py-2 rounded-lg flex justify-center gap-3 items-center font-medium">
+        <button className="hover:cursor-pointer hover:text-amber-300 bg-black min-w-full mt-4 text-white py-2 rounded-lg flex justify-center gap-3 items-center font-medium">
           <LuShoppingCart className="text-lg"/> Add to cart
         </button>
       </section>

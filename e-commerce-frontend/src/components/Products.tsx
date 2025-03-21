@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import ProductCard, { Props } from "./ProductCard"
 import axios from "axios"
 
-const URL = 'https://fakestoreapi.com/products?limit=5'
+const URL = 'https://fakestoreapi.com/products?limit=6'
 
 const Products = () => {
   const [data, setData] = useState<Props[]>([])
